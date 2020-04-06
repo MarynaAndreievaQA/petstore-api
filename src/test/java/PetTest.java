@@ -253,7 +253,7 @@ public class PetTest {
                     .all()
                     .body("status", everyItem(equalTo(status)))
                     .statusCode(200);
-        }
+    }
 
         @Test
         public void getPetByStatusSold () {
