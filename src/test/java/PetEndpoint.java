@@ -14,7 +14,6 @@ public class PetEndpoint {
     private final static String UPDATE_PET_BY_DATA_FORM = "/pet/{id}";
     private final static String GET_PET_BY_STATUS = "/pet/findByStatus";
 
-
     private RequestSpecification given() {
         return RestAssured
                 .given()
@@ -23,10 +22,9 @@ public class PetEndpoint {
                 .log()
                 .all();
     }
-
-    public ValidatableResponse createPet(String body) {
+    public ValidatableResponse createPet(Pet pet) {
         return given()
-                .body(body)
+                .body(pet)
                 .when()
                 .post(CREATE_PET)
                 .then()
@@ -34,18 +32,37 @@ public class PetEndpoint {
                 .all()
                 .statusCode(200);
     }
-
-        public ValidatableResponse updatePet(String body) {
-            return given()
-                    .body(body)
-                    .when()
-                    .put(UPDATE_PET_BY_ID)
-                    .then()
-                    .log()
-                    .all()
-                    .statusCode(200);
+    public ValidatableResponse getPet(long petId) {
+        return given()
+                .when()
+                .get(GET_PET_BY_ID, petId)
+                .then()
+                .log()
+                .all()
+                .body( "id", anyOf(is(petId), is("available")))
+                .statusCode(200);
     }
+    public ValidatableResponse deletePet(long petId) {
+        return given()
+                .when()
+                .delete(DELETE_PET_BY_ID, petId)
+                .then()
+                .log()
+                .all()
+                .body("message", is(String.valueOf(petId)))
+                .statusCode(200);
 
+    }
+    public ValidatableResponse updatePet(Pet pet) {
+        return given()
+                .body(pet)
+                .when()
+                .put(UPDATE_PET_BY_ID)
+                .then()
+                .log()
+                .all()
+                .statusCode(200);
+    }
     public ValidatableResponse updatePetByDataForm(long petId) {
         return given()
                 .contentType("application/x-www-form-urlencoded")
@@ -57,20 +74,7 @@ public class PetEndpoint {
                 .log()
                 .all()
                 .body("message", is(String.valueOf(petId)));
-                //.statusCode(200);
     }
-
-    public ValidatableResponse getPet(long petId) {
-        return given()
-                .when()
-                .get(GET_PET_BY_ID, petId)
-                .then()
-                .log()
-                .all()
-                .body("id", anyOf(is(petId), is("available")))
-                .statusCode(200);
-    }
-
     public ValidatableResponse getPetByStatus(String status) {
         return given()
                 .when()
@@ -80,17 +84,6 @@ public class PetEndpoint {
                 .log()
                 .all()
                 .body("status", everyItem(equalTo("pending")))
-                .statusCode(200);
-    }
-
-    public ValidatableResponse deletePet(long petId) {
-        return given()
-                .when()
-                .delete(DELETE_PET_BY_ID, petId)
-                .then()
-                .log()
-                .all()
-                .body("message", is(String.valueOf(petId)))
                 .statusCode(200);
     }
 }
