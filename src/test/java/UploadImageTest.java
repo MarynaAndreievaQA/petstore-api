@@ -1,8 +1,9 @@
 import io.restassured.response.ValidatableResponse;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class DeletePetTest {
+public class UploadImageTest {
 
     private PetEndpoint petEndpoint = new PetEndpoint();
     private long createdPetId;
@@ -15,7 +16,12 @@ public class DeletePetTest {
     }
 
     @Test
+    public void uploadImage() {
+        petEndpoint.uploadImage(createdPetId);
+    }
+
+    @After
     public void deletePet() {
         petEndpoint.deletePet(createdPetId);
-    }
+   }
 }
