@@ -8,6 +8,7 @@ import io.restassured.specification.RequestSpecification;
 
 import static org.hamcrest.Matchers.*;
 import static org.apache.http.HttpStatus.SC_OK;
+import static org.hamcrest.Matchers.containsString;
 
 import java.io.File;
 
@@ -25,48 +26,59 @@ public class PetEndpoint {
         RestAssured.filters(new RequestLoggingFilter(LogDetail.ALL));
         RestAssured.filters(new ResponseLoggingFilter(LogDetail.ALL));
     }
+
     private RequestSpecification given() {
         return RestAssured
                 .given()
                 .baseUri("https://petstore.swagger.io/v2")
                 .contentType(ContentType.JSON);
     }
+
     public ValidatableResponse createPet(Pet pet) {
         return given()
                 .body(pet)
                 .when()
                 .post(CREATE_PET)
                 .then()
+                .body("name", is("ChuckNorris"))
                 .statusCode(SC_OK);
     }
-    public ValidatableResponse uploadImage(long petId) {
+
+    public ValidatableResponse uploadImage(long petId, String fileName) {
+
+        File file = new File(getClass().getClassLoader().getResource(fileName).getFile());
+
         return given()
                 .contentType("multipart/form-data")
-                .multiPart(new File("/Users/maryna/Downloads/bat.jpg"))
+                .multiPart(file)
                 .when()
                 .post(UPLOAD_IMAGE, petId)
                 .then()
+                .body("message", allOf(containsString("File uploaded"), containsString(file.getName())))
                 .statusCode(SC_OK);
     }
-    public ValidatableResponse updatePetByDataForm(long petId) {
+
+    public ValidatableResponse updatePetByDataForm(Pet pet) {
         return given()
                 .contentType("application/x-www-form-urlencoded")
-                .param("name", "Spike")
-                .param("status", "available")
+                .param("name", pet.getName())
+                .param("status", pet.getStatus())
                 .when()
-                .post(UPDATE_PET_BY_DATA_FORM, petId)
+                .post(UPDATE_PET_BY_DATA_FORM, pet.getId())
                 .then()
-                .body("message", is(String.valueOf(petId)));
-        //.statusCode(SC_OK);
+                .body("message", is(String.valueOf(pet.getId())))
+                .statusCode(SC_OK);
     }
+
     public ValidatableResponse getPet(long petId) {
         return given()
                 .when()
                 .get(GET_PET_BY_ID, petId)
                 .then()
-                .body( "id", anyOf(is(petId), is(Status.AVAILABLE)))
+                .body("id", is(petId))
                 .statusCode(SC_OK);
     }
+
     public ValidatableResponse deletePet(long petId) {
         return given()
                 .when()
@@ -76,22 +88,24 @@ public class PetEndpoint {
                 .statusCode(SC_OK);
 
     }
+
     public ValidatableResponse updatePet(Pet pet) {
         return given()
                 .body(pet)
                 .when()
                 .put(UPDATE_PET_BY_ID)
                 .then()
+                .body("name", is(pet.getName()))
                 .statusCode(SC_OK);
     }
 
-    public ValidatableResponse getPetByStatus(String status) {
+    public ValidatableResponse getPetByStatus(Status status) {
         return given()
                 .when()
                 .param("status", status)
                 .get(GET_PET_BY_STATUS)
                 .then()
-                .body("status", everyItem(equalTo("pending")))
+                .body("status", everyItem(equalTo(status.toString())))
                 .statusCode(SC_OK);
     }
 }

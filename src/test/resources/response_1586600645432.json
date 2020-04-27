@@ -1,0 +1,1329 @@
+[
+  {
+    "id": 9223372036854641000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854641000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 186837,
+    "category": {
+      "id": 457219,
+      "name": "dog"
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 398063,
+        "name": "for kids"
+      },
+      {
+        "id": 157484,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 215585,
+    "category": {
+      "id": 840954,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 590926,
+    "category": {
+      "id": 495223,
+      "name": "dog"
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 278131,
+        "name": "for kids"
+      },
+      {
+        "id": 498426,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 654551,
+    "category": {
+      "id": 124774,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 359221,
+        "name": "for kids"
+      },
+      {
+        "id": 615332,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854642000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 454046,
+    "category": {
+      "id": 563829,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 463982,
+        "name": "for kids"
+      },
+      {
+        "id": 955187,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 662990,
+    "category": {
+      "id": 736573,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 219850,
+        "name": "for kids"
+      },
+      {
+        "id": 969966,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 1427,
+    "category": {
+      "id": 101,
+      "name": "testcategory"
+    },
+    "name": "getcat",
+    "photoUrls": [
+      "a.png",
+      "b.png"
+    ],
+    "tags": [
+      {
+        "id": 102,
+        "name": "testtag1"
+      },
+      {
+        "id": 103,
+        "name": "testtag2"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 1101,
+    "category": {
+      "id": 101,
+      "name": "testcategory"
+    },
+    "name": "getcat",
+    "photoUrls": [
+      "a.png",
+      "b.png"
+    ],
+    "tags": [
+      {
+        "id": 102,
+        "name": "testtag1"
+      },
+      {
+        "id": 103,
+        "name": "testtag2"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 557522,
+    "category": {
+      "id": 641499,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 611728,
+        "name": "for kids"
+      },
+      {
+        "id": 935268,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 917555,
+    "category": {
+      "id": 747783,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 352631,
+    "category": {
+      "id": 775707,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 935241,
+        "name": "for kids"
+      },
+      {
+        "id": 109080,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 838083,
+    "category": {
+      "id": 657514,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 778083,
+    "category": {
+      "id": 651254,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 529416,
+        "name": "for kids"
+      },
+      {
+        "id": 940409,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 178375,
+    "category": {
+      "id": 355504,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 194228,
+    "category": {
+      "id": 808120,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 471427,
+        "name": "for kids"
+      },
+      {
+        "id": 464140,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 874694,
+    "category": {
+      "id": 817982,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 494972,
+    "category": {
+      "id": 231550,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 816108,
+        "name": "for kids"
+      },
+      {
+        "id": 581420,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 130332,
+    "category": {
+      "id": 849566,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 399248,
+    "category": {
+      "id": 369812,
+      "name": "dog"
+    },
+    "name": "Ivan",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1",
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting2"
+    ],
+    "tags": [
+      {
+        "id": 689438,
+        "name": "for kids"
+      },
+      {
+        "id": 666828,
+        "name": "small"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 725854,
+    "category": {
+      "id": 831083,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 689083,
+    "category": {
+      "id": 739670,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 645526,
+    "category": {
+      "id": 372325,
+      "name": ""
+    },
+    "name": "Elwanek",
+    "photoUrls": [
+      "/Users/a/Documents/Sel/workspace/PetStoreAPITesting1"
+    ],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "cats"
+    },
+    "name": "Dolly",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "dogs"
+    },
+    "name": "Gorilla",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "Scooby",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 746841,
+    "category": {
+      "id": 902759,
+      "name": ""
+    },
+    "name": "Maja",
+    "photoUrls": [],
+    "tags": [],
+    "status": "pending"
+  },
+  {
+    "id": 9223372036854663000,
+    "category": {
+      "id": 0,
+      "name": "string"
+    },
+    "name": "Scooby",
+    "photoUrls": [
+      "string"
+    ],
+    "tags": [
+      {
+        "id": 0,
+        "name": "string"
+      }
+    ],
+    "status": "pending"
+  }
+]

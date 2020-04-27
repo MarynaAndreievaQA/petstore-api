@@ -7,17 +7,18 @@ public class UpdatePetByDataFormTest {
 
     private PetEndpoint petEndpoint = new PetEndpoint();
     private long createdPetId;
+    private Pet pet;
 
     @Before
     public void createPet() {
-        Pet pet = new Pet("0", "chupacabra", Status.AVAILABLE);
+        pet = new Pet("0", "ChuckNorris", Status.AVAILABLE);
         ValidatableResponse response = petEndpoint.createPet(pet);
         createdPetId = response.extract().path("id");
     }
 
-  @Test
+    @Test
     public void updatePetByDataForm() {
-        petEndpoint.updatePetByDataForm(createdPetId);
+        petEndpoint.updatePetByDataForm(pet);
     }
 
     @After

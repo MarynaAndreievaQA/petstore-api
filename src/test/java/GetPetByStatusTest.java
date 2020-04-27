@@ -10,15 +10,15 @@ public class GetPetByStatusTest {
 
     @Before
     public void createPet() {
-        Pet pet = new Pet("0", "chupacabra", Status.AVAILABLE);
+        Pet pet = new Pet("0", "ChuckNorris", Status.AVAILABLE);
         ValidatableResponse response = petEndpoint.createPet(pet);
         createdPetId = response.extract().path("id");
     }
 
     @Test
     public void getPetByStatus() {
-      petEndpoint.getPetByStatus("available");
-        }
+        petEndpoint.getPetByStatus(Status.AVAILABLE);
+    }
 
     @After
     public void deletePet() {

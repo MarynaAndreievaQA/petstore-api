@@ -10,14 +10,14 @@ public class UpdatePetTest {
 
     @Before
     public void createPet() {
-        Pet pet = new Pet("0", "chupacabra", Status.AVAILABLE);
+        Pet pet = new Pet("0", "ChuckNorris", Status.AVAILABLE);
         ValidatableResponse response = petEndpoint.createPet(pet);
         createdPetId = response.extract().path("id");
     }
 
     @Test
-    public void updatePet () {
-        Pet pet = new Pet("0", "chuka", Status.AVAILABLE);
+    public void updatePet() {
+        Pet pet = new Pet("0", "Chuck", Status.AVAILABLE);
         ValidatableResponse response = petEndpoint.updatePet(pet);
         createdPetId = response.extract().path("id");
     }

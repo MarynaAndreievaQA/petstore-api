@@ -10,7 +10,7 @@ public class GetPetTest {
 
     @Before
     public void createPet() {
-        Pet pet = new Pet("0", "chupacabra", Status.AVAILABLE);
+        Pet pet = new Pet("0", "ChuckNorris", Status.AVAILABLE);
         ValidatableResponse response = petEndpoint.createPet(pet);
         createdPetId = response.extract().path("id");
     }

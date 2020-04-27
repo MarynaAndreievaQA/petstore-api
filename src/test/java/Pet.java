@@ -14,6 +14,7 @@ public class Pet {
         this.tags = new Tags[]{new Tags("0", "string")};
         this.status = status;
     }
+
     public Tags[] getTags() {
         return tags;
     }
