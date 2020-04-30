@@ -1,11 +1,17 @@
 import io.restassured.response.ValidatableResponse;
+import net.thucydides.core.annotations.Steps;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
+import net.serenitybdd.junit.runners.SerenityRunner;
+import org.junit.runner.RunWith;
+
+@RunWith(SerenityRunner.class)
 
 public class GetPetByStatusTest {
 
-    private PetEndpoint petEndpoint = new PetEndpoint();
+    @Steps
+    private PetEndpoint petEndpoint;
     private long createdPetId;
 
     @Before
