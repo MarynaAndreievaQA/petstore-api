@@ -7,7 +7,7 @@ import io.restassured.specification.RequestSpecification;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
 
-import static org.hamcrest.Matchers.*;
+import static org.hamcrest.CoreMatchers.*;
 import static org.apache.http.HttpStatus.SC_OK;
 import static org.hamcrest.Matchers.containsString;
 
@@ -65,12 +65,13 @@ public class PetEndpoint {
     public ValidatableResponse updatePetByDataForm(Pet pet) {
         return given()
                 .contentType("application/x-www-form-urlencoded")
+                .param("id", pet.getId())
                 .param("name", pet.getName())
                 .param("status", pet.getStatus())
                 .when()
                 .post(UPDATE_PET_BY_DATA_FORM, pet.getId())
                 .then()
-                .body ("name", is(pet.getName()))
+                .body("name", is(pet.getName()))
                 .statusCode(SC_OK);
     }
 

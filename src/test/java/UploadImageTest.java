@@ -1,18 +1,41 @@
 import io.restassured.response.ValidatableResponse;
+import net.serenitybdd.junit.runners.SerenityParameterizedRunner;
 import net.thucydides.core.annotations.Steps;
+import net.thucydides.junit.annotations.TestData;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.runner.RunWith;
 
-@RunWith(SerenityRunner.class)
+import java.util.Arrays;
+import java.util.Collection;
 
+@RunWith(SerenityParameterizedRunner.class)
 public class UploadImageTest {
 
     @Steps
     private PetEndpoint petEndpoint;
+
     private long createdPetId;
+    private final String fileName;
+
+    public UploadImageTest(String fileName) {
+        this.fileName = fileName;
+    }
+
+    @TestData
+    public static Collection<Object[]> testData() {
+        return Arrays.asList(new Object[][]{
+                {"bat.jpg"},
+                {"Nov2016.docx"},
+                {"Iownit.webm"},
+                {"response_1586600645432.json"},
+                {"zoom_0.mp4"},
+                {"Empty_file"},
+                {"hug.gif"},
+                {"id_sample.pdf"},
+        });
+    }
 
     @Before
     public void createPet() {
@@ -22,53 +45,8 @@ public class UploadImageTest {
     }
 
     @Test
-    public void uploadJpg() {
-        petEndpoint.uploadImage(createdPetId, "bat.jpg");
-    }
-
-    @Test
-    public void uploadDocx() {
-        petEndpoint.uploadImage(createdPetId, "Nov2016.docx");
-    }
-
-    @Test
-    public void uploadInfectedFile() {
-        petEndpoint.uploadImage(createdPetId, "virus.txt");
-    }
-
-    @Test
-    public void uploadWebm() {
-        petEndpoint.uploadImage(createdPetId, "Iownit.webm");
-    }
-
-    @Test
-    public void uploadHugeFile() {
-        petEndpoint.uploadImage(createdPetId, "googlechrome.dmg");
-    }
-
-    @Test
-    public void uploadJson() {
-        petEndpoint.uploadImage(createdPetId, "response_1586600645432.json");
-    }
-
-    @Test
-    public void uploadMp4() {
-        petEndpoint.uploadImage(createdPetId, "zoom_0.mp4");
-    }
-
-    @Test
-    public void uploadEmptyFile() {
-        petEndpoint.uploadImage(createdPetId, "Empty_file");
-    }
-
-    @Test
-    public void uploadGif() {
-        petEndpoint.uploadImage(createdPetId, "hug.gif");
-    }
-
-    @Test
-    public void uploadPdf() {
-        petEndpoint.uploadImage(createdPetId, "id_sample.pdf");
+    public void uploadImage() {
+        petEndpoint.uploadImage(createdPetId, fileName);
     }
 
     @After
