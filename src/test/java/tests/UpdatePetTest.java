@@ -1,3 +1,8 @@
+package tests;
+
+import endPoints.PetEndpoint;
+import models.Pet;
+import models.Status;
 import io.restassured.response.ValidatableResponse;
 import net.thucydides.core.annotations.Steps;
 import org.junit.After;
@@ -16,14 +21,22 @@ public class UpdatePetTest {
 
     @Before
     public void createPet() {
-        Pet pet = new Pet("0", "ChuckNorris", Status.AVAILABLE);
+        Pet pet = Pet.builder()
+                .id("0")
+                .name("chupacabra")
+                .status(Status.AVAILABLE)
+                .build();
         ValidatableResponse response = petEndpoint.createPet(pet);
         createdPetId = response.extract().path("id");
     }
 
     @Test
     public void updatePet() {
-        Pet pet = new Pet("0", "Chuck", Status.AVAILABLE);
+        Pet pet = Pet.builder()
+                .id("0")
+                .name("Chuck")
+                .status(Status.AVAILABLE)
+                .build();
         ValidatableResponse response = petEndpoint.updatePet(pet);
         createdPetId = response.extract().path("id");
     }

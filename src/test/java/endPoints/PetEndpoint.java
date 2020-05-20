@@ -1,11 +1,16 @@
+package endPoints;
+
 import io.restassured.filter.log.LogDetail;
 import io.restassured.filter.log.RequestLoggingFilter;
 import io.restassured.filter.log.ResponseLoggingFilter;
 import io.restassured.http.ContentType;
 import io.restassured.response.ValidatableResponse;
 import io.restassured.specification.RequestSpecification;
+import models.Pet;
+import models.Status;
 import net.serenitybdd.rest.SerenityRest;
 import net.thucydides.core.annotations.Step;
+import org.hamcrest.CoreMatchers;
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.apache.http.HttpStatus.SC_OK;
@@ -42,7 +47,7 @@ public class PetEndpoint {
                 .when()
                 .post(CREATE_PET)
                 .then()
-                .body("name", is(pet.getName()))
+                .body("name", CoreMatchers.is(pet.getName()))
                 .statusCode(SC_OK);
     }
 
@@ -71,7 +76,7 @@ public class PetEndpoint {
                 .when()
                 .post(UPDATE_PET_BY_DATA_FORM, pet.getId())
                 .then()
-                .body("name", is(pet.getName()))
+                .body("name", CoreMatchers.is(pet.getName()))
                 .statusCode(SC_OK);
     }
 
@@ -102,7 +107,7 @@ public class PetEndpoint {
                 .when()
                 .put(UPDATE_PET_BY_ID)
                 .then()
-                .body("name", is(pet.getName()))
+                .body("name", CoreMatchers.is(pet.getName()))
                 .statusCode(SC_OK);
     }
 
