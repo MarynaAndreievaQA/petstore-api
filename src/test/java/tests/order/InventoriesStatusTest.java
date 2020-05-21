@@ -1,4 +1,4 @@
-package tests;
+package tests.order;
 
 import endPoints.StoreEndpoint;
 import models.Status;

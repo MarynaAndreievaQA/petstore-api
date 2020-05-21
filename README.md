@@ -1,3 +1,14 @@
+**Project contains automated tests for Petstore:**
+
+`client-api`  
+
+Petstore contains three main Endpoints:
+
+`pet` - describes everything about your Pets
+`store` - describes access to Petstore orders
+`user` - describes operations about user
+
+
 **Setup on OS X:**
   
  1. Install Homebrew package manager if not installed (https://brew.sh/)

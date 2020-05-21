@@ -1,6 +1,8 @@
-package tests;
+package tests.order;
 
 import endPoints.PetEndpoint;
+import endPoints.StoreEndpoint;
+import models.Order;
 import models.Pet;
 import models.Status;
 import io.restassured.response.ValidatableResponse;
@@ -12,28 +14,40 @@ import net.serenitybdd.junit.runners.SerenityRunner;
 import org.junit.runner.RunWith;
 
 @RunWith(SerenityRunner.class)
-
-public class UpdatePetByDataFormTest {
+public class DeleteOrderTest {
 
     @Steps
     private PetEndpoint petEndpoint;
-    private long createdPetId;
-    private Pet pet;
+    private int createdPetId;
+
+    @Steps
+    private StoreEndpoint storeEndpoint;
+    private int placedOrderId;
 
     @Before
-    public void createPet() {
+    public void placeOrder() {
         Pet pet = Pet.builder()
-                .id("0")
+                .id("3")
                 .name("chupacabra")
                 .status(Status.AVAILABLE)
                 .build();
         ValidatableResponse response = petEndpoint.createPet(pet);
         createdPetId = response.extract().path("id");
+
+        Order order = Order.builder()
+                .id("3")
+                .petId(createdPetId)
+                .shipDate(System.currentTimeMillis())
+                .status(Status.PLACED)
+                .complete(false)
+                .build();
+        ValidatableResponse responseOrder = storeEndpoint.placeOrder(order);
+        placedOrderId = responseOrder.extract().path("id");
     }
 
     @Test
-    public void updatePetByDataForm() {
-        petEndpoint.updatePetByDataForm(pet);
+    public void deleteOrder() {
+        storeEndpoint.deleteOrder(placedOrderId);
     }
 
     @After
@@ -41,4 +55,3 @@ public class UpdatePetByDataFormTest {
         petEndpoint.deletePet(createdPetId);
     }
 }
-

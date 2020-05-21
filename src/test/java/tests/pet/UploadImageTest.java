@@ -1,4 +1,4 @@
-package tests;
+package tests.pet;
 
 import endPoints.PetEndpoint;
 import models.Pet;
@@ -16,27 +16,32 @@ import java.util.Arrays;
 import java.util.Collection;
 
 @RunWith(SerenityParameterizedRunner.class)
-
-public class GetPetByStatusTest {
+public class UploadImageTest {
 
     @Steps
     private PetEndpoint petEndpoint;
+
     private long createdPetId;
+    private final String fileName;
 
-    private final Status status;
-
-    public GetPetByStatusTest(Status status) {
-      this.status = status;
+    public UploadImageTest(String fileName) {
+        this.fileName = fileName;
     }
 
     @TestData
-    public static Collection<Object[]> testData(){
+    public static Collection<Object[]> testData() {
         return Arrays.asList(new Object[][]{
-                {Status.AVAILABLE},
-                {Status.SOLD},
-                {Status.PENDING},
+                {"bat.jpg"},
+                {"Nov2016.docx"},
+                {"Iownit.webm"},
+                {"response_1586600645432.json"},
+                {"zoom_0.mp4"},
+                {"Empty_file"},
+                {"hug.gif"},
+                {"id_sample.pdf"},
         });
     }
+
     @Before
     public void createPet() {
         Pet pet = Pet.builder()
@@ -49,16 +54,14 @@ public class GetPetByStatusTest {
     }
 
     @Test
-    public void getPetByStatus() {
-        petEndpoint.getPetByStatus(status);
+    public void uploadImage() {
+        petEndpoint.uploadImage(createdPetId, fileName);
     }
 
     @After
     public void deletePet() {
         petEndpoint.deletePet(createdPetId);
     }
+
+
 }
-
-
-
-

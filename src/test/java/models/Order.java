@@ -9,8 +9,8 @@ import lombok.Getter;
         private String id;
         private Integer petId;
         private Integer quantity;
-        private String shipDate;
+        private long shipDate;
         private Status status;
-        private String complete;
+        private Boolean complete;
     }
 

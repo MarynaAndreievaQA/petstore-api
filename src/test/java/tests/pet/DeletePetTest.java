@@ -1,4 +1,4 @@
-package tests;
+package tests.pet;
 
 import endPoints.PetEndpoint;
 import models.Pet;
